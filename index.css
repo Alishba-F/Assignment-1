@@ -1,0 +1,165 @@
+html{
+	background-color:rgb(219 173 106);
+	color:rgb(249, 249, 118);
+}
+
+body {
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+
+#left-container {
+	left: 0px;
+}
+
+#right-container {
+	right: 0px
+}
+
+/* Style for both the left and right containers */
+.container {
+    height: 100%;
+	margin-left: 59px;
+    margin-right: 125px;
+	padding: 49px;
+    position: absolute;
+    top: 74px;
+    width: 6%;
+}
+
+
+/* this makes the stars go vertical */
+.window {
+	height: 18%;
+	top:10%;
+	position: relative;
+}
+
+
+.star {
+	max-width: 50%;
+	max-height: 350%;
+	padding: 10%;
+	position: absolute;
+	z-index: 1;
+	&:hover {
+		cursor: grab;
+	}
+}
+
+
+/* ------------------left container------------------ */
+/* light cloud */
+#star1 {
+	max-width: 225%;
+	max-height:325%;
+	z-index: 2;
+}
+
+/* darker cloud */
+#star2 {
+	max-width: 225%;
+	max-height:225%;
+	z-index: 2;
+}
+
+/* cloud 2 */
+#star3{
+	max-width: 300%;
+	max-height: 300%;	
+	z-index: 2;
+}
+
+/* black cloud */
+#star4 {
+	max-width: 225%;
+	max-height:325%;
+	z-index: 2;
+
+}
+
+/* full moon */
+#star5 {
+	max-width: 125%;
+	max-height:125%;
+}
+
+/* cresent moon */
+#star6{
+	max-width: 120%;
+	max-height: 120%;
+	
+}
+/* ----------------right container----------------- */
+/* singular star */
+#star7 {
+	max-width: 50%;
+	max-height:50%;
+}
+/* singular star */
+#star8 {
+	max-width: 50%;
+	max-height:50%;
+}
+/* singular star */
+#star9 {
+	max-width: 50%;
+	max-height:50%;
+}
+/* small star */
+#star10 {
+	max-width:30%;
+	max-height: 30%;
+}
+/* smaller star */
+#star11 {
+	max-width:20%;
+	max-height: 20%;
+}
+/* smaller star */
+#star12 {
+	max-width:20%;
+	max-height: 20%;
+}
+
+/* Window  Style*/
+
+.Window-pane-h {
+	background: #a59999;
+    bottom: 20%;
+    height: 4%;
+    left: 30%;
+    position: absolute;
+    width: 45%;
+    z-index: 3;
+}
+.Window-pane-v {
+	background: #a59999;
+    top: 30%;
+    height: 90%;
+    left: 52%;
+    position: absolute;
+    width: 1%;
+    z-index: 3;
+}
+
+.window-glass {
+	background: #201d3b;
+	border-radius: 1rem;
+	top: 30%;
+	height: 90%;
+	left: 30%;
+	/* opacity: 100%; */
+	position: absolute;
+	width: 45%;
+	z-index: 1;
+}
+
+
+
+
+
+
+
