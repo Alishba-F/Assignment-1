@@ -1,0 +1,274 @@
+/*----------------------- General -----------------*/
+@font-face {
+    font-family: "Outfit";
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: "Young Serif";
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  }
+  
+  * {
+    margin:5px;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: hsl(14, 45%, 36%);
+    --secondary-color: hsl(332, 51%, 32%);
+    --body-color: #fff4ca;
+    --navbar:  hsl(46.99deg 100% 89.64%);
+    --title-color: hsl(24, 5%, 18%);
+    --text-color: hsl(30, 10%, 34%);
+    --border-color: hsl(30, 18%, 87%);
+    --white: hsl(0, 0%, 100%);
+  
+    --prepation-bg:hsl(46.99deg 100% 89.64%);
+  
+    font-size: 16px;
+  }
+
+  /*------------------- Navigation Bar ----------------------*/
+  ul-1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: var(--navbar);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(46.99deg 100% 89.64%);;
+  }
+  
+  li-1 {
+    float: left;
+  }
+  
+  li-1 a {
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-family: "Young Serif", serif;
+
+  }
+  
+  li-1 a:hover:not(.active) {
+    background-color: #ffffff;
+  }
+  
+/* --------------------Back to Top Button -----------------------*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #d2cbaf;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+/* --------------------------Main Body ------------------------------*/
+  html,
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--body-color);
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+  }
+  
+  body {
+    padding: 30px;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 750px;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border-radius: 24px;
+  }
+  
+p0 {
+  font-family: "Young Serif", Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 2.5rem ;
+  color: var(--title-color);
+  font-size: 4rem;
+  font-weight: 400%;
+
+}
+
+p1 {
+  
+  color: var(--text-color);
+    font-family: "Outfit", sans-serif;
+    padding:2%;
+    text-align: center;
+    text-justify: distribute;
+    max-width: 70%;
+   
+}
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  h1,
+  h2 {
+    font-family:"Young Serif", Verdana, Geneva, Tahoma, sans-serif;;
+  }
+  
+  h1 {
+    margin: 1.5rem 0;
+    color: var(--title-color);
+    font-size: 2rem;
+  }
+  
+  h2 {
+    color: var(--primary-color);
+  }
+
+  h3 {
+    color: var(--primary-color);
+    margin-top:2%;
+    margin-left:7%;
+  }
+  
+  p,
+  li {
+    color: var(--text-color);
+    font-family: "Young Serif", Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  ul {
+    margin-left: 0.5rem;
+  }
+  
+  li {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    line-height: 1.7rem;
+    list-style-position: outside;
+  }
+  
+  /* li::marker {
+    color: var(--primary-color);
+    font-weight: 700;
+  } */
+  
+  th {
+    font-family: "Outfit", sans-serif;
+    font-weight: normal;
+  }
+  
+  /* tr {
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  } */
+  
+
+  /* Divider Lines between each nutritional fact */
+  tr:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  /* th,
+  td {
+    flex: 1;
+  }
+   */
+  /* td {
+    color: var(--primary-color);
+    font-weight: 700;
+  }
+   */
+  span {
+    color: var(--text-color);
+    font-weight: 700;
+  }
+  
+  .preparation-time {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: var(--prepation-bg);
+    border-radius: 0.5rem;
+  }
+  
+  .preparation-time > h2 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+  section:not(:first-child) > h2 {
+    margin-bottom: 1rem;
+  }
+  
+  hr {
+    margin: 2rem auto;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    text-align: left;
+    color: var(--text-color);
+    font-family: "Outfit", sans-serif;
+  }
+
+  /* Screen Size change commands */
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 0;
+    }
+  
+    main {
+      padding: 0;
+      border-radius: 0;
+    }
+  
+    img {
+      border-radius: 0;
+    }
+  
+    section {
+      padding: 2rem;
+    }
+  
+    hr {
+      width: calc(100% - 4rem);
+    }
+
+    ul-1 {
+      padding: 0;
+    }
+
+    
+  }
+  
+
+  /* references
+ https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_fixed
+  */
